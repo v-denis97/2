@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Курсы Программирования</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #35424a;
+            color: #ffffff;
+        }
+        .course {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .course h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+ <nav>
+ <h1><a href="C:\Users\vds19\OneDrive\Desktop\Мой сайт\Главная.html">КУРСЫ ПРОГРАММИРОВАНИЯ ДЛЯ ДЕТЕЙ И ВЗРОСЛЫХ</a></h1>
+  
+        <a href="C:\Users\vds19\OneDrive\Desktop\Мой сайт\О нас.html">О нас</a>
+ <a href="C:\Users\vds19\OneDrive\Desktop\Мой сайт\Наши цены.html">Наши цены</a>
+        <a href="C:\Users\vds19\OneDrive\Desktop\Мой сайт\Преподаватели.html">Преподаватели</a>
+        <a href="C:\Users\vds19\OneDrive\Desktop\Мой сайт\Отзывы.html">Отзывы</a>
+        <a href="C:\Users\vds19\OneDrive\Desktop\Мой сайт\Контакты.html">Контакты</a>
+ <a href="C:\Users\vds19\OneDrive\Desktop\Мой сайт\Лицензия.html">Лицензия</a>
+    </nav>
+</header>
+
+<section id="courses">
+    <h2>Наши Курсы</h2>
+    <div class="course">
+        <h3>Курс для детей (8-12 лет)</h3>
+        <p>Научите вашего ребенка основам программирования с помощью увлекательных игр и проектов</p>
+    </div>
+    <div class="course">
+        <h3>Курс для подростков (13-17 лет)</h3>
+        <p>Углубленное изучение языков программирования, таких как Python и JavaScript</p>
+    </div>
+    <div class="course">
+        <h3>Курс для взрослых</h3>
+        <p>Изучите программирование с нуля или улучшите свои навыки с помощью практических проектов</p>
+    </div>
+</section>
+
+<section id="teachers">
+    <h2>Наши Преподаватели</h2>
+    <p><strong>Иван Иванов:</strong> Опытный программист с более чем 10-летним стажем работы в IT.</p>
+    <p><strong>Мария Петрова:</strong> Специалист по обучению детей программированию, автор нескольких курсов.</p>
+</section>
+
+<section id="reviews">
+    <h2>Отзывы наших студентов</h2>
+    <blockquote>"Отличные курсы! Мой сын научился программировать за несколько месяцев!" - Анна С.</blockquote>
+    <blockquote>"Я никогда не думал, что смогу научиться программированию. Спасибо за поддержку!" - Сергей К.</blockquote>
+</section>
+
+<section id="contact">
+    <h2>Контакты</h2>
+    <form id="contactForm">
+        <label for="name">Имя:</label>
+
+        <input type="text" id="name" name="name" required />
+
+        
+        <label for="email">Email:</label>
+
+        <input type="email" id="email" name="email" required />
+
+        
+        <label for="message">Сообщение:</label>
+
+        <textarea id="message" name="message" required></textarea>
+
+        
+        <input type="submit" value="Отправить" />
+    </form>
+    <p id="responseMessage"></p>
+</section>
+
+<footer>
+    &copy; 2024 Курсы Программирования
+</footer>
+
+<script>
+// Обработка формы
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+   event.preventDefault();
+   
+   const name = document.getElementById('name').value;
+
+   document.getElementById('responseMessage').innerText = `Спасибо, ${name}! Ваше сообщение отправлено.`;
+   
+   // Очистка формы
+   this.reset();
+});
+</script>
+
+</body>
+</html>
